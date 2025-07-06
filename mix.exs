@@ -35,7 +35,7 @@ defmodule Monsum.MixProject do
 
   defp package do
     [
-      files: ["lib", "priv", "assets", "mix.exs", "README.md"],
+      files: ["lib", "assets", "mix.exs", "README.md"],
       maintainers: ["Alessandro Di Maria"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/grrrisu/monsum"}
