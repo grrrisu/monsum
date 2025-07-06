@@ -1,0 +1,70 @@
+/*
+Monsum Theme for Daisy
+version 0.1.0
+*/
+
+/* Define your custom colors */
+:root {
+  --color-carnation-50: rgb(254 236 239);
+  --color-carnation-100: rgb(252 217 223);
+  --color-carnation-200: rgb(249 179 191);
+  --color-carnation-300: rgb(246 141 159);
+  --color-carnation-400: rgb(244 103 127);
+  --color-carnation-500: rgb(241 65 94);
+  --color-carnation-600: rgb(232 17 53);
+  --color-carnation-700: rgb(180 14 41);
+  --color-carnation-800: rgb(128 10 29);
+  --color-carnation-900: rgb(76 6 17);
+  --color-carnation-950: rgb(50 4 11);
+}
+
+/* DaisyUI theme using standard CSS custom properties */
+[data-theme="monsum"] {
+  color-scheme: dark;
+  
+  /* DaisyUI CSS variables (using HSL values) */
+  --p: 25 117 210;           /* primary: orange-500 */
+  --pc: 254 215 170;         /* primary-content: orange-100 */
+  --s: 6 182 212;            /* secondary: cyan-400 */
+  --sc: 8 51 68;             /* secondary-content: cyan-950 */
+  --a: 3 105 161;            /* accent: sky-700 */
+  --ac: 240 249 255;         /* accent-content: sky-50 */
+  --n: 100 116 139;          /* neutral: slate-500 */
+  --nc: 248 250 252;         /* neutral-content: slate-50 */
+  --b1: 15 23 42;            /* base-100: slate-900 */
+  --b2: 12 74 110;           /* base-200: sky-900 */
+  --b3: 7 89 133;            /* base-300: sky-800 */
+  --bc: 226 232 240;         /* base-content: slate-200 */
+  --in: 14 165 233;          /* info: sky-500 */
+  --inc: 240 249 255;        /* info-content: sky-50 */
+  --su: 16 185 129;          /* success: emerald-500 */
+  --suc: 236 253 245;        /* success-content: emerald-50 */
+  --wa: 234 179 8;           /* warning: yellow-500 */
+  --wac: 66 32 6;            /* warning-content: yellow-950 */
+  --er: 225 29 72;           /* error: carnation-600 */
+  --erc: 254 242 242;        /* error-content: carnation-50 */
+  
+  /* DaisyUI component styling variables */
+  --rounded-box: 0.5rem;
+  --rounded-btn: 0.25rem;
+  --rounded-badge: 1.9rem;
+  --animation-btn: 0.25s;
+  --animation-input: 0.2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1.5px;
+  --tab-border: 1px;
+  --tab-radius: 0.5rem;
+}
+
+/* Your custom component styles */
+.input-monsum {
+  @apply mt-2 block w-full rounded-sm bg-slate-800 text-sky-100 focus:outline-0 focus:ring-0 sm:text-sm sm:leading-6 border border-slate-500 focus:border-sky-600 focus:bg-sky-950;
+}
+
+.input-monsum-error {
+  @apply border-orange-400 focus:border-orange-300;
+}
+
+.button-monsum {
+  @apply hover:brightness-125 active:text-white/80;
+}
