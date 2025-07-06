@@ -51,14 +51,15 @@
   --noise: 0;
 }
 
-@utility input-monsum {
+.input-monsum {
   @apply mt-2 block w-full rounded-sm bg-slate-800 text-sky-100 focus:outline-0 focus:ring-0 sm:text-sm sm:leading-6 border border-slate-500 focus:border-sky-600 focus:bg-sky-950;
 }
 
-@utility input-monsum-error {
+.input-monsum-error {
   @apply border-orange-400 focus:border-orange-300;
 }
 
-@utility button-monsum {
-  @apply hover:brightness-125 active:text-white/80 phx-submit-loading:opacity-75;
+.button-monsum {
+   /* phx-submit-loading:opacity-75 */
+  @apply hover:brightness-125 active:text-white/80;
 }

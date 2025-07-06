@@ -11,7 +11,8 @@ defmodule Monsum.MixProject do
       # Important for asset compilation
       compilers: Mix.compilers(),
       # Include priv directory in package
-      package: package()
+      package: package(),
+      aliases: aliases()
     ]
   end
 
@@ -39,6 +40,14 @@ defmodule Monsum.MixProject do
       maintainers: ["Alessandro Di Maria"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/grrrisu/monsum"}
+    ]
+  end
+
+  defp aliases do
+    [
+      "assets.build": ["esbuild monsum", "tailwind monsum"],
+      "assets.watch": ["esbuild monsum --watch", "tailwind monsum --watch"],
+      "assets.clean": ["cmd rm -rf priv/static/assets/*"]
     ]
   end
 end
