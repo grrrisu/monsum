@@ -10,7 +10,13 @@ from your host application copy the `monsum.css` to `assets/vendor`
 cp deps/monsum/assets/css/monsum.css assets/vendor
 ```
 
-`import "../vendor/monsum.css"` in the `app.css`
+in your `assets/css/app.css` remove the default themes and replace it with:
+
+```css
+@plugin "../vendor/daisyui";
+
+@import "../vendor/monsum.css";
+```
 
 in layout replace `dark` with `monsum` if you want to keep the theme switch
 or
