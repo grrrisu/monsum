@@ -25,8 +25,8 @@ defmodule Monsum.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:phoenix, "~> 1.8.0-rc.3"},
-      {:phoenix_live_view, "~> 1.1.0-rc.1"},
+      {:phoenix, "~> 1.8.0"},
+      {:phoenix_live_view, "~> 1.1.8"},
       {:phoenix_html, "~> 4.0"},
       {:esbuild, "~> 0.8", runtime: Mix.env() == :dev},
       {:tailwind, "~> 0.2", runtime: Mix.env() == :dev}
