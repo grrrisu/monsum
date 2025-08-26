@@ -4,6 +4,8 @@ Component library based on Daisy and TailwindCSS
 
 ## Usage
 
+### CSS
+
 from your host application copy the `monsum.css` to `assets/vendor`
 
 ```bash
@@ -18,9 +20,27 @@ in your `assets/css/app.css` remove the default themes and replace it with:
 @import "../vendor/monsum.css";
 ```
 
-in layout replace `dark` with `monsum` if you want to keep the theme switch
+in the layout replace `dark` with `monsum` if you want to keep the theme switch
 or
 add `data-theme="monsum"` to the `html` tag in `root.html.heex`
+
+### Components
+
+To have them globally availble, add to it to your `lib/myapp_web/myapp_web.ex`file
+
+```elixir
+defp html_helpers do
+  quote do
+    # HTML escaping functionality
+    import Phoenix.HTML
+    # Core UI components and translation
+    import Monsum.MainComponents
+    ...
+  end
+end
+```
+
+or import it whereever needed.
  
 ### Daisy Theme
 
@@ -42,4 +62,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/monsum>.
-
