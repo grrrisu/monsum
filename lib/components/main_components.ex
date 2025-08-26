@@ -23,13 +23,13 @@ defmodule Monsum.MainComponents do
   def button(%{rest: rest} = assigns) do
     if rest[:href] || rest[:navigate] || rest[:patch] do
       ~H"""
-      <.link class={["btn", @class]} {@rest}>
+      <.link class={["btn btn-monsum", @class]} {@rest}>
         {render_slot(@inner_block)}
       </.link>
       """
     else
       ~H"""
-      <button class={["btn", @class]} {@rest}>
+      <button class={["btn btn-monsum", @class]} {@rest}>
         {render_slot(@inner_block)}
       </button>
       """
