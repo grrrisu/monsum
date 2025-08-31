@@ -49,6 +49,35 @@ end
 ```
 
 or import it whereever needed.
+
+#### Core Components
+
+Replace the `core_components.ex` with the one from Monsum
+
+```bash
+cp deps/lib/core_components.example lib/components/core_components.ex
+```
+
+Replace `MyAppWeb` with your namespace
+
+### Javascript
+
+Copy `monsum_hooks.js` to your vendor dir
+
+```bash
+cp deps/monsum/assets/js/monsum_hooks.js assets/vendor
+```
+
+Import it in your `app.js` file
+
+```javascript
+import MonsumHooks from "../vendor/monsum_hooks";
+
+Hooks = {
+  ...colocatedHooks,
+  ...MonsumHooks
+}
+```
  
 ### Daisy Theme
 

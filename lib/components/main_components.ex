@@ -215,4 +215,18 @@ defmodule Monsum.MainComponents do
     <span class={[@package, @name, @class]} />
     """
   end
+
+  @doc """
+  needs: JsonHook
+  use push_event to populate component
+  `push_event("update-json-<id>", data)`
+  """
+
+  attr :id, :string, required: true
+
+  def json_ouput(assigns) do
+    ~H"""
+    <pre id={@id} class="text-xs" phx-hook="Json" phx-update="ignore"></pre>
+    """
+  end
 end
