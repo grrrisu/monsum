@@ -12,7 +12,14 @@ from your host application copy the `monsum.css` to `assets/vendor`
 cp deps/monsum/assets/css/monsum.css assets/vendor
 ```
 
-in your `assets/css/app.css` remove the default themes and replace it with:
+in your `assets/css/app.css` add the compontents as sources
+
+```css
+@source "../deps/monsum/lib"
+
+```
+
+remove the default themes and replace it with:
 
 ```css
 @plugin "../vendor/daisyui";
