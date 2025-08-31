@@ -42,6 +42,7 @@ defp html_helpers do
     import Phoenix.HTML
     # Core UI components and translation
     import Monsum.MainComponents
+    import Monsum.Buttons
     ...
   end
 end
