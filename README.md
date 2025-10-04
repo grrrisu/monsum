@@ -15,7 +15,7 @@ cp deps/monsum/assets/css/monsum.css assets/vendor
 in your `assets/css/app.css` add the compontents as sources
 
 ```css
-@source "../deps/monsum/lib"
+@source "../../deps/monsum/lib"
 
 ```
 
